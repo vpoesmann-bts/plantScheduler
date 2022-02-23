@@ -15,7 +15,7 @@ app.get('/', (req, res) => {
   res.render('index', {
     mois: mois,
     jours: ["Lundi", "Mardi", "Mercredi", "Jeudi", "Vendredi"],
-    firstMonday: date,
+    firstMonday: getFirstMonday(date),
     students: {
       1: "Robert",
       4: "Edmond",
